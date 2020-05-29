@@ -12,31 +12,31 @@ struct ChatScene: View {
     
     @EnvironmentObject var viewModel: ChatViewModel
     
-    init() {
-        UITableView.appearance().separatorStyle = .none
-        UITableView.appearance().tableFooterView = UIView()
-    }
-    
     var body: some View {
-        VStack {
-            Spacer()
-            ScrollView(.vertical, showsIndicators: true) {
-                ForEach(viewModel.messages, id: \.self) { (msg) in
-                    ChatMessageView(chatMessage: msg)
-                        .animation(.easeIn)
-                        .onAppear {
-                            if msg == self.viewModel.newMessage {
-                                self.viewModel.speakMessage(message: msg) {
-                                    print("Message spoked")
+        NavigationView {
+            ReverseScrollView {
+                VStack(spacing: 0) {
+                    ForEach(self.viewModel.messages, id: \.self) { (msg) in
+                        ChatMessageView(chatMessage: msg)
+                            .transition(.opacity)
+                            .animation(.easeInOut(duration: 0.5))
+                            .onAppear {
+                                if msg == self.viewModel.newMessage {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                        self.viewModel.speakMessage(message: msg) {
+                                            print("Message spoked")
+                                        }
+                                    }
                                 }
                             }
-                        }
+                    }
                 }
             }
             .onAppear {
-                debugPrint(self.viewModel.messages)
                 self.viewModel.startChatting()
             }
+            .background(Color(UIColor(hex: "#F9FAFB")))
+            .navigationBarTitle(Text("Dialogue"), displayMode: .inline)
         }
     }
     
@@ -48,3 +48,4 @@ struct ChatScene_Previews: PreviewProvider {
             .environmentObject(ChatViewModel(dataSource: DataSource()))
     }
 }
+

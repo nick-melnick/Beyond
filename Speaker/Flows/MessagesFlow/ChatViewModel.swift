@@ -18,7 +18,9 @@ class ChatViewModel: ObservableObject {
     var newMessage: ChatMessage? {
         didSet {
             if newMessage == nil {
-                self.dataSource.sendNextMessage()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+                    self?.dataSource.sendNextMessage()
+                }
             } else {
                 objectWillChange.send(self)
             }

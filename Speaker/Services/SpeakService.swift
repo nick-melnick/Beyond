@@ -31,7 +31,7 @@ class SpeakService: NSObject, MultiDelegates {
         self.message = message
         let speechUtterance = AVSpeechUtterance(string: message)
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 4.0
+//        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 4.0
 
         self.speechSynthesizer.speak(speechUtterance)
     }

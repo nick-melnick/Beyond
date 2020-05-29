@@ -23,6 +23,8 @@
 		01A9E5B624816AD000CA8D27 /* MultiDelegatesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B524816AD000CA8D27 /* MultiDelegatesProtocol.swift */; };
 		01A9E5B82481847300CA8D27 /* SpeakService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B72481847300CA8D27 /* SpeakService.swift */; };
 		01A9E5BA24818FEF00CA8D27 /* ReverseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B924818FEF00CA8D27 /* ReverseScrollView.swift */; };
+		01A9E5BC2481952400CA8D27 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5BB2481952400CA8D27 /* UIColorExtension.swift */; };
+		01A9E5BE2481A22500CA8D27 /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5BD2481A22500CA8D27 /* AnyTransitionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		01A9E5B524816AD000CA8D27 /* MultiDelegatesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiDelegatesProtocol.swift; path = ../../../../Zalm/Zalm/Shared/Extensions/MultiDelegatesProtocol.swift; sourceTree = "<group>"; };
 		01A9E5B72481847300CA8D27 /* SpeakService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakService.swift; sourceTree = "<group>"; };
 		01A9E5B924818FEF00CA8D27 /* ReverseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseScrollView.swift; sourceTree = "<group>"; };
+		01A9E5BB2481952400CA8D27 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = ../../../../Zalm/Zalm/Shared/Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		01A9E5BD2481A22500CA8D27 /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +146,9 @@
 		01A9E5B424816AB700CA8D27 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				01A9E5BB2481952400CA8D27 /* UIColorExtension.swift */,
 				01A9E5B524816AD000CA8D27 /* MultiDelegatesProtocol.swift */,
+				01A9E5BD2481A22500CA8D27 /* AnyTransitionExtension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -224,7 +230,9 @@
 				01A9E5902480E57D00CA8D27 /* SceneDelegate.swift in Sources */,
 				01A9E5B82481847300CA8D27 /* SpeakService.swift in Sources */,
 				01A9E5BA24818FEF00CA8D27 /* ReverseScrollView.swift in Sources */,
+				01A9E5BE2481A22500CA8D27 /* AnyTransitionExtension.swift in Sources */,
 				01A9E5B124813D6D00CA8D27 /* DataSource.swift in Sources */,
+				01A9E5BC2481952400CA8D27 /* UIColorExtension.swift in Sources */,
 				01A9E5AF2480FF6F00CA8D27 /* ChatMessageShapes.swift in Sources */,
 				01A9E5AD2480EDC900CA8D27 /* ChatMessageView.swift in Sources */,
 				01A9E5A72480E7C800CA8D27 /* ChatMessage.swift in Sources */,
