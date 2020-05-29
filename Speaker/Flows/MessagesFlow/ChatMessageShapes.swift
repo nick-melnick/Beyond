@@ -37,7 +37,7 @@ struct BubbleShare: View {
                 path.addArc(center: CGPoint(x: tl + self.cornerWidth, y: tl), radius: tl, startAngle: Angle(degrees: 180), endAngle: Angle(degrees: 270), clockwise: false)
             }
             .fill(self.color)
-            .shadow(color: Color.black, radius: 4, x: 1, y: 1)
+            .shadow(color: Color.black.opacity(0.2), radius: 4, x: 1, y: 1)
         }
     }
 }

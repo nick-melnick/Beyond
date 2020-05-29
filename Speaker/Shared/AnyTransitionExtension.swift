@@ -11,7 +11,7 @@ import SwiftUI
 extension AnyTransition {
     
     static var slideUpOpacity: AnyTransition {
-        let transition = AnyTransition.move(edge: .bottom)
+        let transition = AnyTransition.move(edge: .bottom).animation(.linear(duration: 0.2))
             .combined(with: .opacity)
         return transition
     }

@@ -28,7 +28,7 @@ struct ChatScene: View {
                                         }
                                     }
                                 }
-                            }
+                        }
                     }
                 }
             }
