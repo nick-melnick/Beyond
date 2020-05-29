@@ -1,0 +1,26 @@
+[
+    {
+        "content": "There is no strong requirement for the implementation to be pixel perfect"
+    },
+    {
+        "content": "If necessary for the implementation purposes the format might be extended with any additional values."
+    },
+    {
+        "content": "Maximum Chat Line size is 550 characters."
+    },
+    {
+        "content": "There is no minimum Chat Line size."
+    },
+    {
+        "content": "For the very first Bubble in 0.5 seconds"
+    },
+    {
+        "content": "For all subsequent Bubbles in 0.5 seconds"
+    },
+    {
+        "content": "For every chat line a Chat Bubble must appear with the following animation logic"
+    },
+    {
+        "content": "Move up from below the bottom screen edge till completely appear (all previous Bubbles must move up synchronously with the appearing Bubble)"
+    }
+]
