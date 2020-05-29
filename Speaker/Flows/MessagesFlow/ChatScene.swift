@@ -19,7 +19,7 @@ struct ChatScene: View {
                     ForEach(self.viewModel.messages, id: \.self) { (msg) in
                         ChatMessageView(chatMessage: msg)
                             .transition(.opacity)
-                            .animation(.easeInOut(duration: 0.5))
+                            .animation(.linear(duration: 0.5))
                             .onAppear {
                                 if msg == self.viewModel.newMessage {
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
