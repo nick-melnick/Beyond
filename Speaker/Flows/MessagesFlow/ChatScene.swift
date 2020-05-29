@@ -23,6 +23,7 @@ struct ChatScene: View {
             ScrollView(.vertical, showsIndicators: true) {
                 ForEach(viewModel.messages, id: \.self) { (msg) in
                     ChatMessageView(chatMessage: msg)
+                        .animation(.easeIn)
                         .onAppear {
                             if msg == self.viewModel.newMessage {
                                 self.viewModel.speakMessage(message: msg) {

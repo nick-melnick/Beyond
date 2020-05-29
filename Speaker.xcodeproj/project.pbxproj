@@ -21,6 +21,8 @@
 		01A9E5B124813D6D00CA8D27 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B024813D6D00CA8D27 /* DataSource.swift */; };
 		01A9E5B324814DA800CA8D27 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 01A9E5B224814DA800CA8D27 /* messages.json */; };
 		01A9E5B624816AD000CA8D27 /* MultiDelegatesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B524816AD000CA8D27 /* MultiDelegatesProtocol.swift */; };
+		01A9E5B82481847300CA8D27 /* SpeakService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B72481847300CA8D27 /* SpeakService.swift */; };
+		01A9E5BA24818FEF00CA8D27 /* ReverseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9E5B924818FEF00CA8D27 /* ReverseScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		01A9E5B024813D6D00CA8D27 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		01A9E5B224814DA800CA8D27 /* messages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
 		01A9E5B524816AD000CA8D27 /* MultiDelegatesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiDelegatesProtocol.swift; path = ../../../../Zalm/Zalm/Shared/Extensions/MultiDelegatesProtocol.swift; sourceTree = "<group>"; };
+		01A9E5B72481847300CA8D27 /* SpeakService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakService.swift; sourceTree = "<group>"; };
+		01A9E5B924818FEF00CA8D27 /* ReverseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				01A9E5B024813D6D00CA8D27 /* DataSource.swift */,
+				01A9E5B72481847300CA8D27 /* SpeakService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				01A9E5AA2480E95200CA8D27 /* ChatViewModel.swift */,
 				01A9E5AC2480EDC900CA8D27 /* ChatMessageView.swift */,
 				01A9E5AE2480FF6F00CA8D27 /* ChatMessageShapes.swift */,
+				01A9E5B924818FEF00CA8D27 /* ReverseScrollView.swift */,
 			);
 			path = MessagesFlow;
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 				01A9E58E2480E57D00CA8D27 /* AppDelegate.swift in Sources */,
 				01A9E5A52480E72400CA8D27 /* Message.swift in Sources */,
 				01A9E5902480E57D00CA8D27 /* SceneDelegate.swift in Sources */,
+				01A9E5B82481847300CA8D27 /* SpeakService.swift in Sources */,
+				01A9E5BA24818FEF00CA8D27 /* ReverseScrollView.swift in Sources */,
 				01A9E5B124813D6D00CA8D27 /* DataSource.swift in Sources */,
 				01A9E5AF2480FF6F00CA8D27 /* ChatMessageShapes.swift in Sources */,
 				01A9E5AD2480EDC900CA8D27 /* ChatMessageView.swift in Sources */,

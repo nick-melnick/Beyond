@@ -29,6 +29,8 @@ class ChatViewModel: ObservableObject {
     
     private unowned var dataSource: DataSource
     
+    private var speakService: SpeakService?
+    
     init(dataSource: DataSource) {
         self.dataSource = dataSource
         self.dataSource.add(delegate: self)
@@ -38,10 +40,17 @@ class ChatViewModel: ObservableObject {
         self.dataSource.sendNextMessage()
     }
 
-    func speakMessage(message: ChatMessage, complete: (() -> ())?) {
-        debugPrint("speak message: \(message.content)")
-        complete?()
-        self.newMessage = nil
+    private var speakFinishedCallback: (() -> Void)?
+    
+    func speakMessage(message: ChatMessage, complete: @escaping () -> Void) {
+        if self.speakService == nil {
+            self.speakService = SpeakService()
+            self.speakService?.add(delegate: self)
+        } else {
+            self.speakService?.stopSpeak()
+        }
+        self.speakService?.speak(message: message.content)
+        self.speakFinishedCallback = complete
     }
 
 }
@@ -52,6 +61,19 @@ extension ChatViewModel: DataSourceDelegate {
         self.newMessage = newMessage
         self.messages.append(newMessage)
         self.objectWillChange.send(self)
+    }
+    
+}
+
+extension ChatViewModel: SpeakServiceDelegate {
+    
+    func didStartSpeak(message: String?) {
+        print("Start speak message: \(String(describing: message))")
+    }
+    
+    func didFinishSpeak(message: String?) {
+        speakFinishedCallback?()
+        self.newMessage = nil
     }
     
 }
