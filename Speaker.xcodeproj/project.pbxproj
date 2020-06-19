@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		015E74362481C5DA003F2274 /* MultiDelegatesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiDelegatesProtocol.swift; sourceTree = "<group>"; };
 		015E74372481C5DA003F2274 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		01701B92249CF31B0083F3DC /* Test Assignment #3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Test Assignment #3.pdf"; sourceTree = "<group>"; };
 		01A9E58A2480E57D00CA8D27 /* Speaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A9E58D2480E57D00CA8D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A9E58F2480E57D00CA8D27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		01A9E5812480E57D00CA8D27 = {
 			isa = PBXGroup;
 			children = (
+				01701B92249CF31B0083F3DC /* Test Assignment #3.pdf */,
 				01A9E58C2480E57D00CA8D27 /* Speaker */,
 				01A9E58B2480E57D00CA8D27 /* Products */,
 			);
